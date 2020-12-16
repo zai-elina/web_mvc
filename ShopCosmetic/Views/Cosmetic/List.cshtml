@@ -1,0 +1,13 @@
+﻿
+    <h2>Все продукты</h2>
+    <h3>@Model.CurrCategory</h3>
+    @{
+        foreach (var cosmetic in Model.AllCosmetics)
+        {
+            <div>
+                <h2>Название продукта:@cosmetic.Name</h2>
+                <p>Цена:@cosmetic.Price.ToString("c")</p>
+            </div>
+        }
+    }
+
