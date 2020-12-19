@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ShopCosmetic.Data.Interfaces;
 using ShopCosmetic.Data.Models;
 using System;
@@ -19,12 +20,15 @@ namespace ShopCosmetic.Controllers
             _allOrders=allOrders;
             _shoppingCart = shoppingCart;
         }
+
+        [Authorize]
         public IActionResult Checkout()
         {
             return View();
         }
 
         [HttpPost]
+        [Authorize]
         public IActionResult Checkout(Order order)
         {
             _shoppingCart.ShoppingCartItems = _shoppingCart.GetShoppingCartItems();

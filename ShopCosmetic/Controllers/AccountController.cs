@@ -19,6 +19,7 @@ namespace ShopCosmetic.Controllers
             _userManager =userManager;
             _signInManager = signInManager;
         }
+        
         public IActionResult Login(string returnUrl)
         {
             return View(new LoginViewModel()
@@ -45,10 +46,11 @@ namespace ShopCosmetic.Controllers
                     return Redirect(loginViewModel.ReturnUrl);
                 }
             }
-
+            
             ModelState.AddModelError("", "Пользователь не найден");
             return View(loginViewModel);
         }
+        
         public IActionResult Register()
         {
             return View();
