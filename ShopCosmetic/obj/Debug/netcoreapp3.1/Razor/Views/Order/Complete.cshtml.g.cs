@@ -14,7 +14,7 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "D:\web mvc\ShopCosmetic\ShopCosmetic\Views\_ViewImports.cshtml"
-using ShopCosmetic;
+using ShopCosmetic.Data.Models;
 
 #line default
 #line hidden
@@ -26,15 +26,8 @@ using ShopCosmetic.ViewModels;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 4 "D:\web mvc\ShopCosmetic\ShopCosmetic\Views\_ViewImports.cshtml"
-using ShopCosmetic.Data.Models;
-
-#line default
-#line hidden
-#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"747cc863a14dac6c44e8b4a6f47615a5ae1ca19f", @"/Views/Order/Complete.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d16f20bc7b454117d286a59153c7476d65428f7b", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"225f0bed6531a5c86c69aeddded59faeba3d89d6", @"/Views/_ViewImports.cshtml")]
     public class Views_Order_Complete : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

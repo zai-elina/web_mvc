@@ -14,7 +14,7 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "D:\web mvc\ShopCosmetic\ShopCosmetic\Views\_ViewImports.cshtml"
-using ShopCosmetic;
+using ShopCosmetic.Data.Models;
 
 #line default
 #line hidden
@@ -26,15 +26,8 @@ using ShopCosmetic.ViewModels;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 4 "D:\web mvc\ShopCosmetic\ShopCosmetic\Views\_ViewImports.cshtml"
-using ShopCosmetic.Data.Models;
-
-#line default
-#line hidden
-#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c853b789b0936602add2541d0a3d50654e9afc85", @"/Views/ShoppingCart/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d16f20bc7b454117d286a59153c7476d65428f7b", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"225f0bed6531a5c86c69aeddded59faeba3d89d6", @"/Views/_ViewImports.cshtml")]
     public class Views_ShoppingCart_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ShoppingCartViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-danger"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -98,7 +91,7 @@ using ShopCosmetic.Data.Models;
 #line hidden
 #nullable disable
             WriteLiteral("     <hr/>\r\n     ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c853b789b0936602add2541d0a3d50654e9afc855311", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c853b789b0936602add2541d0a3d50654e9afc855147", async() => {
                 WriteLiteral("Оплатить ");
             }
             );

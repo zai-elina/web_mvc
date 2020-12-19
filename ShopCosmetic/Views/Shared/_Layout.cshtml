@@ -6,44 +6,41 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
     <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/site.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
     <title></title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark  bg-dark">
+
+        <nav class="navbar navbar-expand-md navbar-dark  bg-secondary">
             <a class="navbar-brand" href="#">Shine</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">Главная </a>
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item active "><a class="nav-link " href="/">Главная</a></li>
+                    <li class="nav-item dropdown show ">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Категории
+                        </a>
+
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuLink">
+                            <li> <a class="dropdown-item active bg-dark" href="/Cosmetic/List/makeup">Макияж</a></li>
+                            <li> <a class="dropdown-item active bg-dark" href="/Cosmetic/List/hair">Уход за волосами</a></li>
+                            <li> <a class="dropdown-item active bg-dark" href="/Cosmetic/List/body">Уход для тела</a></li>
+                            <li> <a class="dropdown-item active bg-dark" href="/Cosmetic/List/face">Уход для лица</a></li>
+
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Cosmetic/List">Все товары</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Cosmetic/List/makeup">Макияж</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Cosmetic/List/hair">Уход за волосами</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Cosmetic/List/body">Уход для тела</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Cosmetic/List/face">Уход для лица</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="/ShoppingCart/">Корзина</a>
-                       
-                    </li>
+                    <li class="nav-item active "><a class="nav-link " href="/Cosmetic/List">Все товары</a></li>
+                    <li class="nav-item active "><a class="nav-link " href="/ShoppingCart/">Корзина</a>  </li>
                 </ul>
-               
             </div>
+            <div class="register"> @await Html.PartialAsync("LoginPartial")</div>
+           
         </nav>
     </header>
     <div class="container mt-5">
@@ -57,3 +54,5 @@
     <script src="~/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+

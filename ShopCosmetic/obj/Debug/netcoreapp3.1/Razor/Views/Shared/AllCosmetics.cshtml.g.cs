@@ -14,7 +14,7 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "D:\web mvc\ShopCosmetic\ShopCosmetic\Views\_ViewImports.cshtml"
-using ShopCosmetic;
+using ShopCosmetic.Data.Models;
 
 #line default
 #line hidden
@@ -26,15 +26,8 @@ using ShopCosmetic.ViewModels;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 4 "D:\web mvc\ShopCosmetic\ShopCosmetic\Views\_ViewImports.cshtml"
-using ShopCosmetic.Data.Models;
-
-#line default
-#line hidden
-#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b1dd71dc0e6fabae2646219fdd9ab046921e3172", @"/Views/Shared/AllCosmetics.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d16f20bc7b454117d286a59153c7476d65428f7b", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"225f0bed6531a5c86c69aeddded59faeba3d89d6", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_AllCosmetics : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Cosmetic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-warning"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -108,7 +101,7 @@ WriteAttributeValue("", 98, Model.Name, 98, 11, false);
 #line hidden
 #nullable disable
             WriteLiteral("</p>\r\n    <p> ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b1dd71dc0e6fabae2646219fdd9ab046921e31725642", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b1dd71dc0e6fabae2646219fdd9ab046921e31725478", async() => {
                 WriteLiteral("Добавить в корзину");
             }
             );

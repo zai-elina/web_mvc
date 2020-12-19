@@ -14,7 +14,7 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "D:\web mvc\ShopCosmetic\ShopCosmetic\Views\_ViewImports.cshtml"
-using ShopCosmetic;
+using ShopCosmetic.Data.Models;
 
 #line default
 #line hidden
@@ -26,15 +26,8 @@ using ShopCosmetic.ViewModels;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 4 "D:\web mvc\ShopCosmetic\ShopCosmetic\Views\_ViewImports.cshtml"
-using ShopCosmetic.Data.Models;
-
-#line default
-#line hidden
-#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d338536e484ad1686d9acf07e3fa97de4f64fd79", @"/Views/Shared/Carousel.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d16f20bc7b454117d286a59153c7476d65428f7b", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"225f0bed6531a5c86c69aeddded59faeba3d89d6", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Carousel : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("d-block w-100"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -81,7 +74,7 @@ using ShopCosmetic.Data.Models;
     <div class=""carousel-inner"">
         <div class=""carousel-item active"">
             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d338536e484ad1686d9acf07e3fa97de4f64fd796389", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d338536e484ad1686d9acf07e3fa97de4f64fd796225", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -97,7 +90,7 @@ using ShopCosmetic.Data.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n        </div>\r\n        <div class=\"carousel-item\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d338536e484ad1686d9acf07e3fa97de4f64fd797657", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d338536e484ad1686d9acf07e3fa97de4f64fd797493", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -113,7 +106,7 @@ using ShopCosmetic.Data.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n        </div>\r\n        <div class=\"carousel-item\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d338536e484ad1686d9acf07e3fa97de4f64fd798925", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d338536e484ad1686d9acf07e3fa97de4f64fd798761", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

@@ -1,5 +1,14 @@
 ﻿body {
-    background-color: antiquewhite;
+    margin: 0;
+    font-family: 'Caveat', cursive;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #FFF5EE;
+
+}
+/*Контейнер*/
+.container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;

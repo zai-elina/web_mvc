@@ -14,6 +14,8 @@ using Microsoft.EntityFrameworkCore;
 using ShopCosmetic.Data.Repository;
 using Microsoft.AspNetCore.Http;
 using ShopCosmetic.Data.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace ShopCosmetic
 {
@@ -37,7 +39,8 @@ namespace ShopCosmetic
             services.AddTransient<IAllOrders,OrdersRepository>();
             services.AddSingleton<IHttpContextAccessor,HttpContextAccessor>();//позволяет работать с сессиями
             services.AddScoped(p=>ShoppingCart.GetCart(p));//позволяет выводить разные корзины для разных пользователей
-
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppDBContext>();
 
             services.AddMvc();
             services.AddMemoryCache();//используем кэш
@@ -56,7 +59,7 @@ namespace ShopCosmetic
             app.UseRouting();
            
             app.UseAuthorization();
-
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

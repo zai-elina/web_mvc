@@ -4,11 +4,12 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
 using ShopCosmetic.Data.Models;
-
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace ShopCosmetic.Data
 {
-    public class AppDBContext:DbContext
+    public class AppDBContext:IdentityDbContext<IdentityUser>
     {
         public AppDBContext(DbContextOptions<AppDBContext> options): base(options)
         {
