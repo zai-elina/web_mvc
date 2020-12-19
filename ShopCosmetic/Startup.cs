@@ -33,14 +33,16 @@ namespace ShopCosmetic
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDBContext>(options => options.UseSqlServer(_confstring.GetConnectionString("DefaultConnection")));
-            services.AddControllersWithViews();
-            services.AddTransient<ICosmetic, CosmeticRepository>();
-            services.AddTransient<ICosmeticCategory, CategoryRepository>();
-            services.AddTransient<IAllOrders,OrdersRepository>();
-            services.AddSingleton<IHttpContextAccessor,HttpContextAccessor>();//позволяет работать с сессиями
-            services.AddScoped(p=>ShoppingCart.GetCart(p));//позволяет выводить разные корзины для разных пользователей
             services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<AppDBContext>();
+
+            services.AddTransient<ICosmetic, CosmeticRepository>();
+            services.AddTransient<ICosmeticCategory, CategoryRepository>();
+           
+            
+            services.AddSingleton<IHttpContextAccessor,HttpContextAccessor>();//позволяет работать с сессиями
+            services.AddScoped(p=>ShoppingCart.GetCart(p));//позволяет выводить разные корзины для разных пользователей
+            services.AddTransient<IAllOrders, OrdersRepository>();
 
             services.AddMvc();
             services.AddMemoryCache();//используем кэш
@@ -51,13 +53,13 @@ namespace ShopCosmetic
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseDeveloperExceptionPage();
-            //app.UseStatusCodePages();
-         
-            app.UseHttpsRedirection();
+            app.UseStatusCodePages();
             app.UseStaticFiles();
+            app.UseHttpsRedirection();
+            
             app.UseSession();
             app.UseRouting();
-           
+            app.UseAuthentication();
             app.UseAuthorization();
             
             app.UseEndpoints(endpoints =>
