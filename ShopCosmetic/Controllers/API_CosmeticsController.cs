@@ -23,9 +23,9 @@ namespace ShopCosmetic.Controllers
 
         // GET: api/API_Cosmetics
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Cosmetic>>> GetCosmetic()
+        public IEnumerable<Cosmetic> GetCosmetic()
         {
-            return await _context.Cosmetic.ToListAsync();
+            return _context.Cosmetic;
         }
 
         // GET: api/API_Cosmetics/5
@@ -53,6 +53,10 @@ namespace ShopCosmetic.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCosmetic(int id, Cosmetic cosmetic)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             if (id != cosmetic.CosmeticId)
             {
                 return BadRequest();
@@ -89,7 +93,7 @@ namespace ShopCosmetic.Controllers
             {
                 return BadRequest(ModelState);
             }
-            
+
 
             _context.Cosmetic.Add(cosmetic);
             await _context.SaveChangesAsync();

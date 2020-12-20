@@ -12,9 +12,10 @@ namespace ShopCosmetic.ViewModels
         [Display(Name ="Имя пользователя")]
         public string UserName { get; set; }
 
-        [Required]
+      
         [Display(Name = "Пароль")]
         [DataType(DataType.Password)]
+        [Required(ErrorMessage = "Длина пароля не может быть меньше 6 символов, пароль должен содержать как минимум один цифровой и один не алфавитно-цифровой символ, а также как минимум один алфавитный символ должен быть в верхнем регистре.")]
         public string Password { get; set; }
 
         public string ReturnUrl { get; set; }
