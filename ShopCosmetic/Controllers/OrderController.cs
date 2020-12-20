@@ -21,13 +21,14 @@ namespace ShopCosmetic.Controllers
             _shoppingCart = shoppingCart;
         }
 
-        
+        [Authorize]
         public IActionResult Checkout()
         {
             return View();
         }
 
         [HttpPost]
+        [Authorize]
         public IActionResult Checkout(Order order)
         {
             _shoppingCart.ShoppingCartItems = _shoppingCart.GetShoppingCartItems();
